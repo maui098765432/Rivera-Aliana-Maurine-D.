@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Override Bootstrap default colors */
+        :root {
+            --bs-primary: #147efb;        /* Your primary color */
+            --bs-secondary: #555555;      /* Your secondary color */
+        }
+
+        /* Style Bootstrap buttons to match your custom buttons */
+        .btn-primary {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
+
+        .btn-outline-primary {
+            color: var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">MAU</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#favorites">Favorites</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">MAU</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#favorites" onclick="toggleMenu()">Favorites</a></li>
+          <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./alii.jpg" alt="Aliana Rivera pfp" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Aliana Rivera</h1>
+        <p class="section__text__p2">3rd year CET Student</p>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='.'">
+            Socials
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./fb logoo.png"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/alianamdr/'"
+          />
+          <img
+            src="./instagram logo.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/alizone_o/'"
+            />
+          <img
+            src="./tiktokkk.png"
+            alt="My Tiktok profile"
+            class="icon"
+            onclick="location.href='https://www.tiktok.com/@hsuweuye'"
+          />
+          <img
+            src="./logo x.avif"
+            alt="My X profile"
+            class="icon"
+            onclick="location.href='https://x.com/ali_zoneeeee'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./alianaa.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./batstate.jpg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Batangas State University</h3>
+              <p>The National Engineering University<br />(Lipa Campus)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./setts.jpg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>College Of Engineering Technology</h3>
+              <p>Major in Computer Technology<br />(CPET 3102)</p>
+            </div>
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+            <p>
+              Hello everyone! I'm Aliana Maurine D. Rivera, 20 years old. Born on March 24, 2004 in GMA, Cavite. I live in Lipa, City Batangas.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <section id="favorites">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Favorites</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">My Faves</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./catt.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cats</h3>
+                  <p>Favorite Pet</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./food.png"
+                  alt="food icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Food</h3>
+                  <p>Favorite Food</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./bookk.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>A Gentle Reminder</h3>
+                  <p>Favorite Book</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./singer.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TJ Monterde</h3>
+                  <p>Favorite Singer</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./movieee.png"
+                  alt="movie icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ghibli</h3>
+                  <p>Favorite Movies</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./music.png"
+                  alt="song icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Darating Din</h3>
+                  <p>Favorite Song</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">My Idols</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./favooo.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Colet Vergara</h3>
+                  <p>BINI Main Bias</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./favooo.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kolette Madelo</h3>
+                  <p>Artist</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./favooo.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Nadine Lustre</h3>
+                  <p>Artist</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./favooo.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Lee Ji-eun (IU) </h3>
+                  <p>Korean Artist</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./favooo.jpg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>SZA</h3>
+                <p> Artist</p>
+              </div>
+            </article>
+            <article>
+                <img
+                  src="./favooo.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jonaxx</h3>
+                  <p>Favorite Author</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <p class="section__text__p1">Browse through</p>
+      <h1 class="title">My Gallery</h1>
+      <div class="gallery-container">
+        <div class="gallery-grid">
+          <!-- Row 1 -->
+          <div class="gallery-item">
+            <img src="./pwendss.jpg" alt="Gallery Image 1" class="gallery-img" />
+            <div class="gallery-overlay">
+              <h3>College Besties</h3>
+              <p>they make college life bearable and fun.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./family.jpg" alt="Gallery Image 2" class="gallery-img" />
+            <div class="gallery-overlay">
+              <h3>Family</h3>
+              <p>time spent with fam is never a waste of time.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./self.jpg" alt="Gallery Image 3" class="gallery-img" />
+            <div class="gallery-overlay">
+              <h3>Self</h3>
+              <p>Don't forget the life you promised yourself.</p>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="gallery-item">
+            <img src="./carLasMau.jpg" alt="Gallery Image 4" class="gallery-img" />
+            <div class="gallery-overlay">
+              <h3>My Trio</h3>
+              <p>since 2k17</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./hearchu.jpg" alt="Gallery Image 5" class="gallery-img" />
+            <div class="gallery-overlay">
+              <h3>bff</h3>
+              <p>sisters by heart</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./cutiesss.jpg" alt="Gallery Image 6" class="gallery-img" />
+            <div class="gallery-overlay">
+              <h3>Us.</h3>
+              <p>my pet peeves</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./emaill.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/u/0/#inbox">alianadrivera@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./phoneee.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a>963-8481-920</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Favorites</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Aliana Rivera. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
